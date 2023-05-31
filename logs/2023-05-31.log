@@ -1,0 +1,58 @@
+2023-05-31 10:26:29,022 INFO[E:\Code\UiTest\testcase\test_case.py][test_case.py (test_success_login:30] - 执行登录
+2023-05-31 10:28:23,375 INFO[E:\Code\UiTest\testcase\test_case.py][test_case.py (test_success_login:30] - 执行登录
+2023-05-31 10:29:44,729 INFO[root][test_case.py (test_success_login:30] - 执行登录
+2023-05-31 10:30:25,739 INFO[E:\Code\UiTest\testcase\test_case.py][test_case.py (test_success_login:30] - 执行登录
+2023-05-31 10:33:06,149 ERROR[root][yamlutil.py (__init__:16] - <class 'FileNotFoundError'>
+2023-05-31 10:40:41,939 ERROR[root][yamlutil.py (__init__:16] - <class 'FileNotFoundError'>
+2023-05-31 10:48:56,292 INFO[root][test_case.py (test_success_login:31] - 执行登录
+2023-05-31 12:58:37,955 INFO[root][test_case.py (test_success_login:30] - 执行登陆测试用例
+2023-05-31 13:11:42,188 INFO[root][test_case.py (test_success_login:32] - 执行登陆测试用例
+2023-05-31 13:13:19,976 INFO[root][test_case.py (test_success_login:32] - 执行登陆测试用例
+2023-05-31 13:19:25,124 INFO[root][test_case.py (test_success_login:33] - 执行登陆测试用例
+2023-05-31 13:19:31,492 ERROR[root][assertutil.py (assert_if_res_true:57] - Error,返回熟悉不是True
+2023-05-31 13:20:55,916 INFO[root][test_case.py (test_success_login:33] - 执行登陆测试用例
+2023-05-31 13:21:10,108 ERROR[root][assertutil.py (assert_if_res_true:57] - Error,返回属性不是True
+2023-05-31 13:22:16,269 INFO[root][test_case.py (test_success_login:33] - 执行登陆测试用例
+2023-05-31 13:23:05,321 INFO[root][test_case.py (test_success_login:33] - 执行登陆测试用例
+2023-05-31 13:23:13,364 ERROR[root][assertutil.py (assert_if_res_true:57] - Error,返回属性不是True
+2023-05-31 13:25:03,740 INFO[root][test_case.py (test_success_login:33] - 执行登陆测试用例
+2023-05-31 13:25:09,943 ERROR[root][assertutil.py (assert_if_res_true:58] - Error,返回属性不是True
+2023-05-31 13:25:57,680 INFO[root][test_case.py (test_success_login:33] - 执行登陆测试用例
+2023-05-31 13:26:03,919 ERROR[root][assertutil.py (assert_if_res_true:59] - Error,返回属性不是True
+2023-05-31 13:26:51,178 INFO[root][test_case.py (test_success_login:33] - 执行登陆测试用例
+2023-05-31 13:26:59,604 ERROR[root][assertutil.py (assert_if_res_true:58] - Error,返回属性不是True
+2023-05-31 13:29:47,343 INFO[root][test_case.py (test_success_login:33] - 执行登陆测试用例
+2023-05-31 13:29:55,099 INFO[root][test_case.py (test_success_login:43] - 登陆成功
+2023-05-31 13:30:19,455 INFO[root][test_case.py (test_success_login:33] - 执行登陆测试用例
+2023-05-31 13:30:32,779 ERROR[root][assertutil.py (assert_if_res_true:58] - Error,返回属性不是True
+2023-05-31 13:33:52,316 INFO[root][test_case.py (test_success_login:33] - 执行登陆测试用例
+2023-05-31 13:34:05,460 ERROR[root][assertutil.py (assert_if_res_true:60] - Error,返回属性不是True
+2023-05-31 13:39:15,882 INFO[root][test_case.py (test_success_login:33] - 执行登陆测试用例
+2023-05-31 13:39:33,068 ERROR[root][assertutil.py (assert_if_res_true:60] - Error,返回属性不是True
+2023-05-31 13:39:59,751 INFO[root][test_case.py (test_success_login:33] - 执行登陆测试用例
+2023-05-31 13:40:17,741 ERROR[root][assertutil.py (assert_if_res_true:60] - Error,返回属性不是True
+2023-05-31 13:40:48,164 INFO[root][test_case.py (test_success_login:33] - 执行登陆测试用例
+2023-05-31 13:40:56,665 INFO[root][test_case.py (test_success_login:42] - 登陆成功
+2023-05-31 13:41:20,990 INFO[root][test_case.py (test_success_login:33] - 执行登陆测试用例
+2023-05-31 13:41:27,933 INFO[root][test_case.py (test_success_login:42] - 登陆成功
+2023-05-31 13:41:27,936 ERROR[root][assertutil.py (assert_res_code_equal:17] - Error，响应码 2 与期望响应码 21 不相等
+2023-05-31 14:11:34,076 INFO[root][test_case.py (test_success_login:44] - 登陆成功
+2023-05-31 14:14:44,500 INFO[root][test_case.py (test_success_login:44] - 登陆成功
+2023-05-31 14:17:13,854 ERROR[root][assertutil.py (assert_if_res_true:60] - Error,返回属性不是True
+2023-05-31 14:19:50,238 INFO[root][test_case.py (test_success_login:45] - 登陆成功
+2023-05-31 14:57:10,974 ERROR[root][assertutil.py (assert_if_res_true:60] - Error,返回属性不是True
+2023-05-31 14:58:48,940 ERROR[root][assertutil.py (assert_if_res_true:60] - Error,返回属性不是True
+2023-05-31 14:59:32,602 ERROR[root][assertutil.py (assert_if_res_true:60] - Error,返回属性不是True
+2023-05-31 15:00:24,435 ERROR[root][assertutil.py (assert_if_res_true:60] - Error,返回属性不是True
+2023-05-31 15:02:18,286 ERROR[root][assertutil.py (assert_if_res_true:60] - Error,返回属性不是True
+2023-05-31 15:03:05,924 ERROR[root][assertutil.py (assert_if_res_true:60] - Error,返回属性不是True
+2023-05-31 15:05:01,370 ERROR[root][assertutil.py (assert_if_res_true:60] - Error,返回属性不是True
+2023-05-31 15:05:55,429 ERROR[root][assertutil.py (assert_if_res_true:60] - Error,返回属性不是True
+2023-05-31 15:07:00,853 ERROR[root][assertutil.py (assert_if_res_true:60] - Error,返回属性不是True
+2023-05-31 15:14:07,936 ERROR[root][assertutil.py (assert_if_res_true:60] - Error,返回属性不是True
+2023-05-31 15:23:28,028 ERROR[root][assertutil.py (assert_if_res_true:60] - Error,返回属性不是True
+2023-05-31 16:11:20,001 ERROR[root][assertutil.py (assert_res_code_equal:17] - Error，响应码 3 与期望响应码 4 不相等
+2023-05-31 16:18:58,000 ERROR[root][assertutil.py (assert_res_code_equal:17] - Error，响应码 3 与期望响应码 4 不相等
+2023-05-31 16:21:08,180 ERROR[root][assertutil.py (assert_if_res_true:60] - Error,返回属性不是True
+2023-05-31 16:21:08,244 ERROR[root][assertutil.py (assert_res_code_equal:17] - Error，响应码 3 与期望响应码 4 不相等
+2023-05-31 16:22:29,526 ERROR[root][assertutil.py (assert_res_code_equal:17] - Error，响应码 3 与期望响应码 4 不相等

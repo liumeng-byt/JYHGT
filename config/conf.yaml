@@ -1,0 +1,26 @@
+BASE:
+ url:
+  url_warehouse: "http://jyh-test.happywine.cn/#/login"
+  url_xxx: "xxx"
+  url_xxx: "xxx"
+  log_level: "debug"  # log等级
+  log_extension: .log  # log扩展名
+
+  #  excel文件名及sheet名
+ EXCEL:
+  excel_name: "testdat.xls"
+  sheet_by: 0
+
+# 邮件配置信息
+EMAIL:
+ smtpserver: "smtp.163.com"
+ username: "yls_lm@163.com"
+# password: "YLS@lm_0071"
+ authorization: "YIBCXCKZZHNENHVQ"  # 163邮箱密码登录无效，需要使用授权码
+ receiver: "yls_lm@163.com"
+
+# 登录信息
+USER_INFO:
+ warehouse:
+  username: "store2"#撒旦撒旦
+  password: "store123!"

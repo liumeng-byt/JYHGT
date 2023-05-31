@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed May 31 17:05:14 CST 2023","Wed May 31 17:05:27 CST 2023","12850","testcase","test_case","TestLogin","","","登陆成功",""
