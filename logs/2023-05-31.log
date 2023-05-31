@@ -56,3 +56,4 @@
 2023-05-31 16:21:08,180 ERROR[root][assertutil.py (assert_if_res_true:60] - Error,返回属性不是True
 2023-05-31 16:21:08,244 ERROR[root][assertutil.py (assert_res_code_equal:17] - Error，响应码 3 与期望响应码 4 不相等
 2023-05-31 16:22:29,526 ERROR[root][assertutil.py (assert_res_code_equal:17] - Error，响应码 3 与期望响应码 4 不相等
+2023-05-31 18:49:45,320 ERROR[root][assertutil.py (assert_if_res_true:60] - Error,返回属性不是True
