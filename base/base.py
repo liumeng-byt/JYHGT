@@ -26,14 +26,20 @@ class Base(object):
     def base_get_text(self, loc):
         return self.base_find_element(loc).text
 
-    # 截图方法
-    def base_get_image(self):
-        self.driver.get_screenshot_as_file("../image/{}.png".format(time.strftime("%Y_%m_%d %H-%M-%S")))
+    # 截图方法(全屏)
+    def base_get_image_full_screen(self,path):
+        # self.driver.get_screenshot_as_file("../image/{}.png".format(time.strftime("%Y_%m_%d %H-%M-%S")))
+        # image = "../image/xxx.png"
+        self.driver.get_screenshot_as_file(path)
+
+    # 截图方法（元素）
+    def base_get_image_element(self,loc,path):
+        self.base_find_element(loc,timeout=2).screenshot(path)
 
     # 判断元素是否存在封装
     def base_element_if_exit(self, loc):
         try:
-            self.base_find_element(loc, timeout=2)  # 假如找登陆按钮，则需要先退出，如果退出是失败的，则需要等待30秒，这种情况下直接指定2秒，无需等待待太久
+            self.base_find_element(loc, timeout=1)  # 假如找登陆按钮，则需要先退出，如果退出是失败的，则需要等待30秒，这种情况下直接指定2秒，无需等待待太久
             return True
         except:
             return False
