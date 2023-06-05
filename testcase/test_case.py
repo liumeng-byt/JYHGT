@@ -1,4 +1,5 @@
 import os
+
 import allure
 import pytest
 import time
@@ -6,30 +7,33 @@ import page
 from config.conf import ConfYaml
 from page.login_page import LoginHandle
 from utils.assertutil import AssertUtil
-from utils.docrutil import DOcr
-from utils.driverutil import DriverUtil
-from utils.logutil import GetLogger
-from utils.windows_msg_pyautogui import WindowsMsg
 
 
-@allure.feature("登陆")
-class TestLogin(object):
+from page.sample_page import NewSampleHandle
+from utils.docr import DOcr
+from utils.log import GetLogger
+from utils.windows_msg_pyaut import WindowsMsg
+
+
+@allure.feature("TestCase")
+class TestCase(object):
     driver = None
 
     def setup_class(self):
         self.driver = LoginHandle()
+        # self.driver_sample = NewSampleHandle()
         self.windows_msg = WindowsMsg()
         self.logger = GetLogger()
         self.ass = AssertUtil()
         self.docr = DOcr()
 
-    def teardown_class(self):
-        self.windows_msg.msg_alert(title="msg", text="点击关闭浏览器")
-        DriverUtil().quit_driver()
+    # def teardown_class(self):
+    #     self.windows_msg.msg_alert(title="msg", text="点击关闭浏览器")
+    #     DriverUtil().quit_driver()
 
     @pytest.mark.parametrize('username,password', [
-        (ConfYaml().get_login_user_info()['warehouse']['username'],
-         ConfYaml().get_login_user_info()['warehouse']['password'])])
+        (ConfYaml().get_login_user_info()['admin']['username'],
+         ConfYaml().get_login_user_info()['admin']['password'])])
     @allure.title("登陆成功")
     def test_success_login(self, username, password):
         while True:
@@ -52,7 +56,10 @@ class TestLogin(object):
                 assert True
                 break
 
+    def test_new_sample(self):
+        NewSampleHandle().page_excute_new_sample("样品名称")
 
 if __name__ == '__main__':
     pytest.main()
     os.system("allure generate ../report/result -o ../report/html --clean")
+

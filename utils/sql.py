@@ -1,5 +1,5 @@
 import pymysql
-from utils.logutil import logs
+from utils.log import logs
 
 
 class MysqlUtile:

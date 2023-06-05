@@ -1,7 +1,7 @@
 import json
 
 from base.base import Base
-from utils.logutil import GetLogger
+from utils.log import GetLogger
 
 
 class AssertUtil:
@@ -31,9 +31,9 @@ class AssertUtil:
         try:
             try:
                 body = json.dumps(response_body)
+                assert body == expected_body
             except Exception as e:
                 self.log.get_logger().error("字典转换为json错误:{}".format(e))
-            assert body == expected_body
             return True
         except:
             self.log.get_logger().error("失败，响应body：%s,期望body：%s" % (body, expected_body))
@@ -56,7 +56,6 @@ class AssertUtil:
             assert res is expected
             # return True
         except:
-            Base().base_get_image()
             self.log.get_logger().error("Error,返回属性不是True")
             raise
         # else:

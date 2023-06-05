@@ -2,7 +2,7 @@ import win32gui
 import win32con
 
 
-class WindowsMsg(object):
+class WindowsMsgR(object):
     def __init__(self):
         wc = win32gui.WNDCLASS()
         hinst = wc.hInstance = win32gui.GetModuleHandle(None)
@@ -36,4 +36,4 @@ class WindowsMsg(object):
 
 
 # if __name__ == '__main__':
-#     WindowsMsg().show_msg("标题", "text")
+#     WindowsMsgR().show_msg("标题", "text")

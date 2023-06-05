@@ -1,7 +1,7 @@
 BASE:
  url:
   url_warehouse: "http://jyh-test.happywine.cn/#/login"
-  url_xxx: "xxx"
+  url_admin: "http://admin.test.jyhg.com/#/login"
   url_xxx: "xxx"
   log_level: "debug"  # log等级
   log_extension: .log  # log扩展名
@@ -22,5 +22,9 @@ EMAIL:
 # 登录信息
 USER_INFO:
  warehouse:
-  username: "store2"#撒旦撒旦
+  username: "store2"
   password: "store123!"
+
+ admin:
+  username: "PT_LM01"
+  password: "JYHG123."

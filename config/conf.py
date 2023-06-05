@@ -1,6 +1,6 @@
 import os
 
-from utils.yamlutil import YamlOperate
+from utils.yaml import YamlOperate
 
 # 获取当前文件的绝对路径
 current_file_absolute = os.path.abspath(__file__)

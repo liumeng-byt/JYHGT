@@ -3,7 +3,7 @@ import os
 
 import xlrd
 
-from utils.logutil import logs
+from utils.log import logs
 
 
 class SheetTypeError:

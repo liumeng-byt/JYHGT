@@ -3,7 +3,7 @@ import os
 import logging
 import yaml
 
-from utils.logutil import GetLogger
+from utils.log import GetLogger
 
 
 class YamlOperate(object):
