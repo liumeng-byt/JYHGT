@@ -1,3 +1,5 @@
+import time
+
 from base.base import Base
 import page
 

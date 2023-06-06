@@ -1,1 +1,0 @@
-ERROR    root:docr.py:18 [Errno 2] No such file or directory: '../image/2023_06_06 20-25-07.png'
