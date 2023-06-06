@@ -2,15 +2,22 @@ import time
 from selenium.webdriver.support.wait import WebDriverWait
 from config.conf import ConfYaml
 from utils.driver import DriverUtil
+from utils.log import GetLogger
 
 
 class Base(object):
     def __init__(self):
         self.driver = DriverUtil.get_driver(ConfYaml().get_config_url()['url_admin'])
+        self.log = GetLogger().get_logger()
 
     # 查找元素方法
     def base_find_element(self, loc, timeout=20, poll=0.5):
-        return WebDriverWait(self.driver, timeout=timeout, poll_frequency=poll).until(lambda x: x.find_element(*loc))
+        try:
+            element = WebDriverWait(self.driver, timeout=timeout, poll_frequency=poll).until(lambda x: x.find_element(*loc))
+            self.driver.execute_script("arguments[0].click();", element)
+            return element
+        except Exception as e:
+            self.log.error("NoSuchElementError",e)
 
     # 点击方法
     def base_click(self, loc):

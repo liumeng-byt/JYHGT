@@ -49,7 +49,7 @@ class TestCase(object):
                 try:
                     self.driver.page_click_verify_code_rect()  # 点击验证码刷新
                 except Exception as e:
-                    self.logger.get_logger().info("找不到元素:", e)
+                    self.logger.get_logger().info("No Such Element:", e)
             else:
                 print("LoginSuccessfully")
                 assert True
