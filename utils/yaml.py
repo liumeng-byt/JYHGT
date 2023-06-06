@@ -1,6 +1,4 @@
 import os
-
-import logging
 import yaml
 
 from utils.log import GetLogger

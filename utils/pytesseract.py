@@ -5,7 +5,6 @@ import re
 
 class VerifyCodeIdentify(object):
     def verify_Code_identify(self, screenimage, rect):
-        # 把整个屏幕的截图传过来，再把验证码框的位置传过来,
         # rect = self.driver.find_element(By.XPATH, "//button[@value=*]").rect
         # 从截下来的图中获取验证码位置再保存（如果windows系统缩放比为125%，需每个点都乘以1.25，如果为100%则不乘）
         # left = rect['x'] * 1.25
@@ -29,8 +28,7 @@ class VerifyCodeIdentify(object):
         img = Image.open(screenimage) # 读取识别验证码
         code = pytesseract.image_to_string(img).strip()  # 去空格
 
-
-        # 识别出来验证码去特殊符号
+        # 去特殊符号
         result_code = ''
         for i in code:
             pattern = re.compile(r'[a-zA-Z0-9]')

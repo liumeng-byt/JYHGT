@@ -1,10 +1,7 @@
 # coding=utf-8
 import os
-
 import xlrd
-
-from utils.log import logs
-
+from utils.log import GetLogger
 
 class SheetTypeError:
     pass
@@ -13,13 +10,13 @@ class SheetTypeError:
 class ExcelReader(object):
     def __init__(self, file_path, sheet_by):
         self._data = list()
-        self.log = logs(__file__)
+        self.log = GetLogger().get_logger()
         if os.path.exists(file_path):
             self.file_path = file_path
             self.sheet_by = sheet_by
         else:
-            self.log.error("文件不存在")
-            raise FileNotFoundError("文件不存在")
+            self.log.error("FileNotFoundError")
+            raise FileNotFoundError("FileNotFoundError")
 
     def excel_read(self):
         if not self._data:
@@ -46,4 +43,4 @@ class ExcelReader(object):
 
 
 if __name__ == '__main__':
-    print(ExcelReader("E:\\Code\\JYHGUITest\\data\\testdat.xls", 0).excel_read())
+    print(ExcelReader("../data/testdat.xls", 0).excel_read())

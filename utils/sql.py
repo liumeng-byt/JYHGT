@@ -1,5 +1,6 @@
 import pymysql
-from utils.log import logs
+
+from utils.log import GetLogger
 
 
 class MysqlUtile:
@@ -14,7 +15,7 @@ class MysqlUtile:
             print("数据库连接失败")
             raise e
         self.cur = self.conn.cursor()
-        self.logs =logs()
+        self.log = GetLogger().get_logger()
 
     def get_fetchone(self, sql):
         """
@@ -46,7 +47,7 @@ class MysqlUtile:
                 self.conn.commit()
         except Exception as e:
             self.conn.rollback()
-            self.logs.error("提交不成功：%s" % e)
+            self.log.error("提交不成功：%s" % e)
             return False
         return True
 

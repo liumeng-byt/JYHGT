@@ -5,8 +5,6 @@ import smtplib
 from config.conf import ConfYaml
 
 
-# 初始化
-# smtp地址，用户名，密码，接收邮件者，邮件标题，邮件内容，邮件附件
 class SendEmail:
     def __init__(self, smtp_addr, username, authorization, recv, title=None, password=None, content=None, file=None):
         self.smtp_addr = smtp_addr

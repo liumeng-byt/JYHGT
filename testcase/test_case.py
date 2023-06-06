@@ -6,7 +6,7 @@ import time
 import page
 from config.conf import ConfYaml
 from page.login_page import LoginHandle
-from utils.assertutil import AssertUtil
+from utils.ass import AssertUtil
 
 
 from page.sample_page import NewSampleHandle
