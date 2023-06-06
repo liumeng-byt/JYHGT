@@ -53,3 +53,6 @@ class NewSampleHandle(Base):
         self.page_input_qr_code_amount(1)
         self.page_click_submit_btn()
 
+
+class CompletionSampleHandle(Base):
+    pass

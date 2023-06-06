@@ -8,7 +8,6 @@ from config.conf import ConfYaml
 from page.login_page import LoginHandle
 from utils.ass import AssertUtil
 
-
 from page.sample_page import NewSampleHandle
 from utils.docr import DOcr
 from utils.log import GetLogger
@@ -59,7 +58,7 @@ class TestCase(object):
     def test_new_sample(self):
         NewSampleHandle().page_excute_new_sample("样品名称")
 
+
 if __name__ == '__main__':
     pytest.main()
     os.system("allure generate ../report/result -o ../report/html --clean")
-

@@ -12,9 +12,9 @@ search = By.XPATH, '//*[@placeholder="请输入搜索内容" and @popperclass="m
 home_page = By.XPATH, '//*[@role="tab"]'  # 首页
 
 """以下是新增样品数据"""
-sample_menu = By.XPATH, '//*[@id="app"]/div[2]/div[2]/div[1]/div/div[2]/div[1]/div/ul/div/li[9]/div/span'  # 样品菜单
-sample_manage_menu = By.XPATH, '//*[@id="app"]/div[2]/div[2]/div[1]/div/div[2]/div[1]/div/ul/div/li[9]/ul/li[1]/span'  # 样品管理菜单
-new_btn = By.XPATH, '//*[@id="avue-view"]/div/div/div/div/div[2]/div/div[1]/div[1]/button/span'  # 新增按钮
+sample_menu = By.XPATH, '//*[@class="el-scrollbar__view"]//*[text()="样品"]'  # 样品菜单
+sample_manage_menu = By.XPATH, '//*[@id="app"]/div[2]/div[2]/div[1]/div/div[2]/div[1]/div/ul/div/li[8]/ul/li[1]/span'  # 样品管理菜单
+new_btn = By.XPATH, '//*[@class="avue-crud__left"]'  # 新增按钮
 sample_name = By.XPATH, '//*[@class="el-dialog__body"]//*[@placeholder="请输入 样品名称"]'  # 样品名称输入框
 winery_box = By.XPATH,'//*[@class="el-dialog__body"]//*[@placeholder="请选择 所属酒厂"]'#点击所属酒厂输入框
 winery_name = By.XPATH,'/html/body/div[4]/div[1]/div[1]/ul/li[14]'# 选择酒厂01
