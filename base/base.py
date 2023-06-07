@@ -15,7 +15,7 @@ class Base(object):
         try:
             element = WebDriverWait(self.driver, timeout=timeout, poll_frequency=poll).until(lambda x: x.find_element(*loc))
             # self.driver.execute_script("arguments[0].click();",element)
-            # TODO 存在元素覆盖问题，，明明找到元素了，却点击不了，可以试试把WebDriverWait分离出来，再通过execute_script运行
+            # TODO 存在元素覆盖问题，找到元素了，却点击不了，可以试试把WebDriverWait分离出来，再通过execute_script运行
             return element
         except Exception as e:
             self.log.error("NoSuchElementError",e)
