@@ -1,0 +1,1 @@
+[{"uid":"edeac58b996f2a36","name":"登陆成功","time":{"start":1686043453688,"stop":1686043455208,"duration":1520},"status":"passed","severity":"normal"},{"uid":"9a12381efc7419ce","name":"test_new_sample","time":{"start":1686043455213,"stop":1686043464056,"duration":8843},"status":"passed","severity":"normal"}]
