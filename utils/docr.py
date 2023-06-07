@@ -1,3 +1,5 @@
+import os
+
 import ddddocr
 from PIL import Image
 
@@ -16,6 +18,8 @@ class DOcr(object):
             return self.docr_ocr.classification(img_bytes)
         except Exception as e:
             self.logger.get_logger().error(e)
+        finally:
+            self.delete_file(image_path)
 
     def docr_rect(self, image_path, rect):
         left = rect['x']
@@ -30,3 +34,9 @@ class DOcr(object):
             return self.docr_ocr.classification(img_bytes)
         except Exception as e:
             self.logger.get_logger().error(e)
+        finally:
+            self.delete_file(image_path)
+
+    def delete_file(self,image_path):
+        os.remove(image_path)
+
